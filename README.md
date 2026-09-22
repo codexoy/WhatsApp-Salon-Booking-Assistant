@@ -5,9 +5,7 @@
 Service businesses -- dentists, nutritionists, physiotherapists, salons -- lose bookings because nobody picks up the phone at 11pm. Clients message on WhatsApp, get no reply, and book elsewhere. The AI receptionist handles the conversation, checks real-time availability, and books directly into Google Calendar. No app to install, no portal to learn. Just WhatsApp.
 
 ![Python](https://img.shields.io/badge/Python-3.12+-blue)
-![Tests](https://github.com/martin-minghetti/whatsapp-ai-receptionist/actions/workflows/tests.yml/badge.svg)
-![License](https://img.shields.io/badge/license-MIT-green)
-
+![Tests](https://github.com/codexoy/WhatsApp-Salon-Booking-Assistant/actions/workflows/tests.yml/badge.svg)
 ---
 
 ## What it does
@@ -93,8 +91,8 @@ See [DECISIONS.md](DECISIONS.md) for the full rationale behind each technical ch
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/martin-minghetti/whatsapp-ai-receptionist.git
-cd whatsapp-ai-receptionist
+git clone https://github.com/codexoy/WhatsApp-Salon-Booking-Assistant.git
+cd WhatsApp-Salon-Booking-Assistant
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -254,8 +252,8 @@ No issue template, no CLA. Just describe what you changed and why.
 
 ## Community
 
-- **Issues**: [GitHub Issues](https://github.com/martin-minghetti/whatsapp-ai-receptionist/issues) -- bug reports, feature requests, questions
-- **Discussions**: [GitHub Discussions](https://github.com/martin-minghetti/whatsapp-ai-receptionist/discussions) -- ideas, show & tell, general chat
+- **Issues**: [GitHub Issues](https://github.com/codexoy/WhatsApp-Salon-Booking-Assistant/issues) -- bug reports, feature requests, questions
+- **Discussions**: [GitHub Discussions](https://github.com/codexoy/WhatsApp-Salon-Booking-Assistant/discussions) -- ideas, show & tell, general chat
 
 ---
 
