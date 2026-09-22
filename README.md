@@ -1,26 +1,32 @@
-<h1 align="center">WhatsApp AI Receptionist</h1>
+<h1 align="center">WhatsApp Salon Booking Bot
+</h1>
 
 **Your clients are messaging you on WhatsApp anyway. This bot answers them.**
 
-Service businesses -- dentists, nutritionists, physiotherapists, salons -- lose bookings because nobody picks up the phone at 11pm. Clients message on WhatsApp, get no reply, and book elsewhere. The AI receptionist handles the conversation, checks real-time availability, and books directly into Google Calendar. No app to install, no portal to learn. Just WhatsApp.
+A conversational assistant that lets salon and barbershop clients book, reschedule, and cancel appointments entirely through WhatsApp — no app downloads, no phone calls, no front-desk bottleneck.
+
+Walk-ins are great. But most clients want to secure a slot before they show up. When nobody answers the salon phone during a busy Saturday, that client moves on to the next shop on Google Maps. This bot fixes that by turning WhatsApp into a 24/7 booking channel.
+
+Built with Python, FastAPI, and the OpenAI API. Calendar sync via Cal.com. Zero front-end.
 
 ![Python](https://img.shields.io/badge/Python-3.12+-blue)
 ![Tests](https://github.com/codexoy/WhatsApp-Salon-Booking-Assistant/actions/workflows/tests.yml/badge.svg)
 ---
 
-## What it does
+## Core Capabilities
 
-| Capability | How |
+| Feature | Implementation |
 |---|---|
-| **Conversational booking** | Natural language via WhatsApp, powered by Claude |
-| **Real-time availability** | Google Calendar integration with slot locking |
-| **Full lifecycle** | Create, cancel, and modify appointments |
-| **Voice messages** | Audio transcribed via OpenAI Whisper |
-| **Smart dates** | "tomorrow", "next Wednesday", "next week" resolved to real dates |
-| **Reminders** | Automated WhatsApp messages 24h before appointments |
-| **Payments** | Optional Mercado Pago integration with checkout links |
-| **Multi-client ready** | YAML config + knowledge base per business, no code changes |
-| **Resilient state** | Redis in production, in-memory fallback for development |
+| Natural language booking | GPT-4o-mini with function calling |
+| Real-time availability | Cal.com API with slot verification |
+| Reschedule & cancel | Intent detection + slot swap logic |
+| Image messages | Client can send reference hairstyle photos |
+| Service catalog | YAML-based, editable per salon |
+| Staff assignment | Optional stylist preference or auto-assign |
+| Deposit collection | Stripe Checkout link for no-show protection |
+| Reminder pings | WhatsApp template message 3h before appointment |
+| Multi-location | Single bot, per-branch config |
+| Session memory | SQLite for dev, PostgreSQL for production |
 
 ---
 
